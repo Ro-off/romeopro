@@ -24,14 +24,14 @@ background-position:0px 0px;
 
 
 /*//////////////////////////////////////////////LogoLine///////////////////////////////////////////////////////////*/
-  #logoline{position: fixed;z-index: 300; border-width: 50px 18px 0; border-style: solid; border-color: #F5F5F5 transparent; margin:auto;}
+  #logoline{position: fixed; z-index:300; border-width: 50px 18px 0; border-style: solid; border-color: #F5F5F5 transparent; margin:auto;}
   #logoshadow {position: fixed; margin:auto; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); z-index: 299;}
   #logolinetxt{ position: relative;z-index: 298; text-align:center; color:white; font-family: 'Righteous', cursive;; background: linear-gradient(-45deg, #FF033E , #FF8418 ); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 /*//////////////////////////////////////////////RightLine////////////////////////////////////////////////////////*/
-  #rightline {  position:fixed; background: linear-gradient(-190deg, #FF033E , #FF8418 ); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+  #rightline {  position:fixed; background: linear-gradient(-190deg, #FF033E , #FF8418 ); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);z-index: 1;}
   /*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*////////////////////////////////////////////////BodyLine/////////////////////////////////////////////////////////*/
@@ -64,9 +64,20 @@ background-position:0px 0px;
 
 
  /*//////////////////////////////////////////////Coment///////////////////////////////////////////////////////////*/
- #coment {position: absolute;border-radius: 10px; 
+  #coment {position: absolute;border-radius: 10px; 
   background-color:rgb(255, 255, 255);}
-#comentg {position: absolute;z-index: -1;border-radius: 10px; background: linear-gradient(-190deg, #FF033E , #FF8418 );
+  #comentg {position: absolute;z-index: -1;border-radius: 10px; background: linear-gradient(-190deg, #FF033E , #FF8418 );
    }
-#comenttxt {position: relative; font-family: 'ABeeZee', sans-serif;}/*ÑÑÑÑ*/
+  #comenttxt {position: relative; font-family: 'ABeeZee', sans-serif;}/*ÑÑÑÑ*/
  /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+  /*//////////////////////////////////////////////DownInfo///////////////////////////////////////////////////////////*/
+    #downinfo {position: absolute;border-radius: 50px;
+    background-color:rgb(250, 250, 250);}
+    #downinfog {position: absolute;z-index: -1;border-radius: 50px; background: linear-gradient(-190deg, #FF033E , #FF8418 );
+     box-shadow: 0 -10px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+    #downinfotxt {position: relative;}
+    #downbottom { background-color:rgb(250, 250, 250); position:absolute;}}
+  /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
