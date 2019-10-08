@@ -59,3 +59,15 @@ facebookjs.onmouseover = function() {
 facebookjs.onmouseout = function() {
   facebookjs.src = "https://img.icons8.com/ios-filled/50/ffffff/facebook.png";
 };
+
+//
+//Instagram
+var downtxtjs = document.getElementById("downtxt");
+downtxtjs.onmouseover = function() {
+  downtxtjs.style = "font-size:40px; font-family: 'Varela Round'; color:black;";
+};
+downtxtjs.onmouseout = function() {
+  downtxtjs.style =
+    "font-size:40px; font-family: 'Varela Round'; color:#696969;";
+};
+//
