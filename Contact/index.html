@@ -10,7 +10,7 @@
  -->
 
 <head>
-	<title>Main - Romeo Sklyaroff</title>
+	<title>Contact me - Romeo Sklyaroff</title>
 	<meta charset="UTF-8" />
 
 </head>
@@ -66,10 +66,27 @@ Romeo Sklyaroff		</p>
 <div id=maintxt style="top:890px;margin-right:35%; margin-left:35%;">
 <p><div align=center id=firstline  style="height:10px; margin-top:10px; left:35%; right:35% "><div></p>
 <p id=mtxtup style="font-size:90px; margin-top: 30px; margin-right:20%; margin-left:-30%; " >&lsquo;&lsquo;</p>
-<p id=mtxtmd style="font-size:30px;  margin-top:-140px;margin-right:-20%; margin-left:-20%;">
-Hi, my name is Roman, I live in Ukraine and studing in Sumy State University.</br>
-This site is concept of my portfolio
-</p>
+
+<form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
+  <p class="contact-form__title">Оставьте заявку на расчет стоимости</p>
+  <p class="contact-form__description"></p>
+  <div class="contact-form__input-wrapper">
+    <input name="name" type="text" class="contact-form__input contact-form__input_name" placeholder="Введите ваше имя">
+    <div class="contact-form__error contact-form__error_name"></div>
+  </div>
+             
+  <div class="contact-form__input-wrapper">
+    <input name="tel" type="tel" class="contact-form__input contact-form__input_tel" placeholder="Введите ваш телефон">
+    <div class="contact-form__error contact-form__error_tel"></div>
+  </div>
+ 
+  <div class="contact-form__input-wrapper"> 
+     <input name="email" type="email" class="contact-form__input contact-form__input_email" placeholder="Введите ваш email">
+     <div class="contact-form__error contact-form__error_email"></div>
+  </div>
+ 
+  <button class="contact-form__button" type="submit"> Узнать стоимость </button>
+</form>
 <p id=mtxtdwn style="font-size:80px; margin-right:-30%; margin-left:90%; margin-top: -50px; ">&rsquo;&rsquo;</p>
 <p style="margin-top: -110px;"><div align=center id=firstline  style="height:10px; left:35%; right:35%  "><div></p>
 </div>
@@ -97,6 +114,8 @@ I am learning html, css, javascript </br> ana wanna became </br> WEB-developer	<
 
 <!------>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/mail/js/mail.js"></script>
 <script src="src/script.js"></script></body>
 
 </html>
