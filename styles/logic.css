@@ -1,0 +1,59 @@
+/*//////////////////////////////////////////////Fonts/////////////////////////////////////////////////////////////*/
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+body {
+
+background:url(https://i.yapx.ru/FZZXT.jpg);
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:0px 0px;
+-moz-background-size: 130%;
+-webkit-background-size: 130%;
+-o-background-size: 130%
+
+}
+
+
+
+/*//////////////////////////////////////////////LogoLine///////////////////////////////////////////////////////////*/
+#logoline{position: fixed; z-index:300; border-width: 50px 18px 0; border-style: solid; border-color: rgb(17, 19, 22) transparent; margin:auto;}
+#logoshadow {position: fixed; margin:auto; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); z-index: 299;}
+#logolinetxt{ position: relative;z-index: 298; text-align:center; color:white; font-family: 'Righteous', cursive;; background: linear-gradient(-45deg, #FF033E , #FF8418 ); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*//////////////////////////////////////////////RightLine////////////////////////////////////////////////////////*/
+#rightline {  position:fixed; background: linear-gradient(-190deg, #FF033E , #FF8418 ); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);z-index: 1;}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*//////////////////////////////////////////////DownInfo///////////////////////////////////////////////////////////*/
+#downinfo { position: absolute; z-index:-2;   border-radius: 60px; box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+  background-color:#3B444B;}
+  #downinfog { position: absolute; z-index: -3; border-radius: 60px; background: linear-gradient(-190deg, #FF033E , #FF8418 );}
+  #downinfotxt {position: relative;}
+  #downbottom { background-color:#3B444B; position:absolute; z-index: -2;  }
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*//////////////////////////////////////////////Firstline///////////////////////////////////////////////////////////*/
+#firstline { z-index:3; border-radius: 10px; linear-gradient(-190deg, #FF033E , #FF8418 ); background: linear-gradient(-190deg, #FF033E , #FF8418 );}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*//////////////////////////////////////////////WINDOW1///////////////////////////////////////////////////////////*/
+#window1 {position: absolute;border-radius: 10px;
+  background-color:rgb(17, 17, 17);}
+  #window1g {position: absolute; z-index: -1; border-radius: 10px; background: linear-gradient(-190deg, #FF033E , #FF8418 );
+   box-shadow: 0 -10px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+  #window1txt {position: relative;}/*ÑÑÑÑ*/
+ /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+ 
