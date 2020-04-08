@@ -26,8 +26,7 @@ svg {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: url('mountains.jpg') no-repeat center center;
-  opacity:0.4;
+  background: url('mountains.jpg');
   background-size: cover;
  
 }
