@@ -16,6 +16,7 @@ svg {
   text-align: center;
   color: #fff;
   background: url('mountains.jpg') no-repeat center center;
+  opacity:0.4;
   font-size: 28px;
   font-weight: bold;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, .75);
