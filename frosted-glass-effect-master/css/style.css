@@ -24,10 +24,11 @@ svg {
 #content {
 
   height: 100%;
-  width: 100%;
+  width: 50%;
   position: absolute;
-  background: url('mountains.jpg');
+  background: url('mountains.jpg') no-repeat center center;
   background-size: cover;
+  
  
 }
 
