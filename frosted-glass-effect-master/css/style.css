@@ -20,6 +20,16 @@ svg {
   font-weight: bold;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, .75);
 }
+
+#content {
+
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url('mountains.jpg') no-repeat center center;
+  background-size: cover;
+}
+
 #frostedBk {
   width: 400px;
   height: 500px;
