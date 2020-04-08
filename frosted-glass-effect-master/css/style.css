@@ -8,13 +8,7 @@ svg {
   display: none;
 }
 
-#content {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background: url('mountains.jpg') no-repeat center center;
-  background-size: cover;
-}
+
 
 #text {
   z-index: 3;
