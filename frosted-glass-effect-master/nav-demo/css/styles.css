@@ -1,0 +1,365 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #333;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family:  'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.column {
+  max-width: 1000px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+.block {
+  padding:0 3rem;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4rem 2rem 3rem;
+  position: relative;
+  z-index: 1;
+}
+.section.background-dark {
+  background: #282828;
+  color: #fff;
+}
+.section.full-bleed {
+  padding:0;
+}
+
+/* things that depend on primary content column size */
+h1, h2, h3, p, .img-column, ul, ol, blockquote, .grid.txt-column, hr.txt-column, hr.ellipses, hr.small, pre.txt-column {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* TYPE */
+p {
+  font-size:2rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+ul, ol {
+  padding: 0 0 0 2rem;
+  margin-bottom: 2rem;
+}
+li {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+li ul {
+  margin-top: 1rem;
+}
+
+p.lede {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size:2.9rem;
+  line-height: 4rem;
+  margin-top: 4rem;
+}
+
+h3 {
+  font-size:2.2rem;
+  line-height: 3rem;
+  margin-top: 4rem;
+}
+
+/* can go inside an h tag for a small secondary header */
+.small-head {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  line-height: 3rem;
+  margin: 0;
+  letter-spacing: .035em;
+}
+
+h2:first-child, h3:first-child, .byline + h2 {
+  margin-top:0;
+}
+a, a:visited {
+  text-decoration: none;
+  color: #0094C0;
+  border-bottom: 1px solid #ccc;
+  transition: border .2s;
+}
+a:hover {
+  text-decoration: none;
+  color: #0094C0;
+  border-bottom: 1px solid #0094C0;
+}
+
+p.drop::first-letter, p.drop:first-letter {
+  display: block;
+  float: left;
+  font-size: 5rem;
+  line-height: 6rem;
+  padding: 0 1rem 0 0;
+  font-weight: bold;
+}
+
+p.byline {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+p.caption {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-style: italic;
+  margin-top: -1rem;
+}
+
+hr {
+  margin: 6rem 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+hr.txt-column {
+  margin: 6rem auto;
+}
+
+hr.small ,hr.ellipses {
+  margin: 6rem auto;
+  border:none;
+  height: 1px;
+  position: relative;
+}
+hr.ellipses::after {
+  content: '. . .';
+  color: #666;
+  display: block;
+  font-size: 2rem;
+  line-height: 1px;
+  text-align: center;
+}
+hr.small::after {
+  content: '';
+  display: block;
+  width: 50px;
+  border-top:1px solid #ccc;
+  margin: 0 auto;
+}
+blockquote {
+  font-size:2rem;
+  line-height: 3rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  padding: 2rem 0;
+  position: relative;
+}
+
+blockquote.large {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+blockquote.center-text {
+  text-align: center;
+}
+blockquote.right-text {
+  text-align: right;
+}
+blockquote.full-width {
+  max-width: none;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+blockquote.right {
+  float: right;
+  max-width: 400px;
+  margin-right: 0 !important;
+  margin-left: 3rem !important;
+}
+blockquote.left {
+  float: left;
+  max-width: 400px;
+  margin-left: 0 !important;
+  margin-right: 3rem !important;
+
+}
+blockquote.background {
+  background: #72FFB7;
+  padding: 2rem;
+}
+blockquote.border {
+  border: 3px solid #333;
+  padding: 2rem;
+}
+
+
+/* IMAGES */
+img {
+  width: auto;
+  max-width: 100%;
+  height:auto;
+  display: block;
+  margin: 2rem auto;
+}
+
+.img-center {
+  margin: 3rem auto;
+}
+
+.img-right {
+  margin: 1rem 0 3rem 3rem;
+  float: right;
+}
+
+.img-left {
+  margin:1rem 3rem 2rem 0;
+  float: left;
+}
+
+.img-column {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* must be outside of column div */
+.img-full-bleed {
+  margin: 3rem auto;
+  width: 100%;
+}
+.img-full-pad {
+  padding: 0 3rem;
+  width: 100%;
+}
+/* can set a max on full bleed image */
+.max-1600 {
+  max-width: 1600px;
+  margin: 3rem auto;
+}
+
+.img:first-child {
+  margin-top: 0;
+}
+
+.section.background-image {
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* GRID */
+.grid {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.grid:before, .grid:after, .column:before, .column:after {
+    display: table;
+    content: " ";
+}
+.grid:after, .column:after {
+  clear: both;
+}
+.grid.tight {
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+}
+
+.grid.wide {
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+.grid.nopad {
+  margin: 0;
+}
+
+.grid.tight img{
+  margin-bottom: 1rem;
+}
+.grid.nopad img{
+  margin-bottom: 0;
+}
+.grid.tight img + *, .grid.nopad img + *{
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .sixcol {
+    width: 50%;
+  }
+  .fourcol {
+    width: 33.3332%;
+  }
+  .threecol {
+    width: 25%;
+  }
+  .sixcol, .fourcol, .threecol {
+  float: left;
+  padding: 0 1rem;
+}
+}
+
+
+
+
+.tight .sixcol, .tight .fourcol, .tight .threecol  {
+  padding: 0 .5rem;
+}
+.wide .sixcol, .wide .fourcol, .wide .threecol  {
+  padding: 0 2rem;
+}
+
+.nopad .sixcol, .nopad .tight .nopad .fourcol, .tight .nopad .threecol  {
+  padding: 0;
+}
+
+/* utilities */
+.center-text  {
+  text-align: center;
+}
+
+/* CODE */
+pre {
+    white-space: pre; 
+    display: block;
+    color: #333;
+    margin: 3rem auto !important;
+    background: #f4f4f4;
+    overflow-x: scroll;
+    padding: 0 1rem;
+    max-width: none;
+} 
+code { 
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}

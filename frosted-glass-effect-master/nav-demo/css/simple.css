@@ -1,0 +1,40 @@
+html {
+  font-size: 10px;
+}
+
+h1, h2, h3, p, img.img-column, ul, ol, blockquote, .grid.txt-column, hr.txt-column, hr.ellipses, hr.small, pre.txt-column {
+  max-width: 70rem;
+}
+.section {
+  background: #fff;
+}
+h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+}
+h3 {
+  margin-top: 2rem;
+}
+.lede {
+}
+#bk1 {
+  background: url('../img/waves.jpg') no-repeat center center;
+  background-size: cover;
+  margin-bottom:0;
+  padding:0;
+}
+#bk1 .column {
+  padding: 20rem 2rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .125) 0%, rgba(0, 0, 0,.5) 100%); 
+  max-width: none;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, .75);
+}
+.column {
+  max-width: 1200px;
+}
+.fourcol {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+

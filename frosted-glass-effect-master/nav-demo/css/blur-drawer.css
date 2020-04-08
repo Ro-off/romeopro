@@ -1,0 +1,181 @@
+.blurredContentFrame  {
+  z-index: 1100;
+  top:0;
+  overflow: hidden;
+  position: absolute;
+}
+#rightBlurredContentFrame {
+  right:0;
+}
+#leftBlurredContentFrame {
+  left:0;
+}
+
+.blurredContent {
+  position: absolute;
+  top:0;
+  background: #000;
+}
+.no-backdropfilter .blurredContent {
+  filter:blur(25px);
+  -webkit-filter:blur(25px);
+  -moz-filter:blur(25px);
+}
+#rightBlurredContent {
+  right: 0;
+}
+#leftBlurredContent {
+  left: 0;
+}
+
+#rightBlurredContent .content {
+  right: 0;
+  background: #fff;
+}
+#leftBlurredContent .content {
+  left: 0;
+  background: #fff;
+}
+
+.navMenu {
+  position: absolute;
+  top:0;
+  overflow: hidden;
+  z-index: 1200;
+   
+}
+.backdropfilter .navMenu {
+   -webkit-backdrop-filter: blur(15px);
+}
+.navMenu.right {
+  right: 0;
+  background: rgba(255, 255, 255, .125);
+  box-shadow: inset 0 0 100px  rgba(255, 255, 255, .25);
+}
+.navMenu.left {
+  left: 0;
+  background: rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 100px  rgba(0, 0, 0, .25), 0 0 10px rgba(0, 0, 0, .5);
+
+}
+.backdropfilter .navMenu.left{
+ background: rgba(0, 0, 0, .25);
+}
+.backdropfilter .navMenu.right{
+  background: rgba(255, 255, 255, .25);
+}
+
+.navMenu, #rightBlurredContentFrame, #leftBlurredContentFrame {
+  width: 0;
+/*  width: 550px;*/
+/*  display: none;*/
+  transition: all .3s;
+}
+.navMenu.on, #rightBlurredContentFrame.on, #leftBlurredContentFrame.on   {
+  width: 550px;
+}
+
+.blurredContent .section, .blurredContent .column {
+  position: static;
+}
+#navCover {
+  display: none;
+  width: 100%;
+  background: rgba(0, 0, 0, .7);
+  z-index: 1000;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.backdropfilter #navCover {
+    background: rgba(0, 0, 0, .5);
+}
+
+/*  BUTTON  */
+.navbutton {
+  width: 105px;
+  position: absolute;
+  top: 10px;
+ 
+  transition: background .3s;
+  z-index: 3000;
+  text-decoration: none;
+  height: 40px;
+  border-radius: 3px;
+}
+.navbutton.right {
+  right: 10px;
+}
+.navbutton.left {
+  left: 10px;
+}
+
+.nav-label {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top:9px;
+}
+.right .nav-label {
+  left:12px;
+
+}
+.left .nav-label {
+  right:12px;
+}
+.navbutton:hover  {
+  background: rgba(255, 255, 255, .2);
+  cursor: pointer;
+}
+.navbutton.on:hover  {
+  background: rgba(0, 0, 0, .5);
+  cursor: pointer;
+}
+.navicon {
+  width: 30px;
+  height: 17px;
+  margin: 11px 12px;
+  position: absolute;
+  top: 0;
+}
+.right .navicon {
+  right: 0;
+}
+.left .navicon {
+  left: 0;
+}
+.bar {
+  height: 3px;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transition: all .3s;
+  background: #fff;
+}
+.bar1 {
+    top: 0;
+}
+.bar2 {
+    top: 7px;
+}
+.bar3 {
+    top: 14px;
+}
+.on .bar1 {
+  transform: rotate(45deg);
+      width: 25px;
+    top: 5px;
+    left: 2px;
+}
+.on .bar3 {
+  transform: rotate(-45deg);
+      width: 25px;
+    top: 5px;
+    left: 2px;
+}
+.on .bar2 {
+  opacity:0;
+}
