@@ -1,0 +1,227 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.screenFlex {
+  display: flex;
+  margin: auto;
+  position: fixed;
+
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left : 0px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+}
+
+.menuDesk {
+
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0px;
+
+  margin-left: 20px;
+  margin-top: 40px;
+  border-radius: 25px;
+
+  width: 300px;
+  min-height: 90px;
+  background: #1f1f1f;
+
+  align-items: center;
+}
+
+.nameDesk {
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0px 6px 13px -2px #000000;
+
+
+  width: 325px;
+  height: 50px;
+
+  border-radius: 25px;
+
+  background: black;
+}
+  #closeButton {
+    position: absolute;
+
+    margin-top: -2.5px;
+
+    height: 50px;
+    width: 50px;
+  }
+    #closeButton:hover p{
+      color: #28b1efed;
+      transform: rotate(360deg);
+    }
+    #closeButton p {
+      color: white;
+       transition: transform, color;
+       transition-duration: 1s;
+    }
+  #header {
+    color: white;
+  }
+.space {
+  height: 25px;
+  width: auto;
+}
+
+  .describe {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    height: 25px;
+    width: 300px;
+  }
+    #describe1 {
+      width: 150px;
+      margin-left: 40px;
+      color: white;
+      font-style: italic;
+      font-size: 15px;
+      font-weight: 200;
+
+    }
+    #describe2  {
+      width: 150px;
+      margin-left: 80px;
+      color: white;
+      font-style: italic;
+      font-size: 15px;
+      font-weight: 200;
+
+    }
+
+    .goods {
+      display: flex;
+      flex-direction:column;
+      left: 0px;
+
+      margin-left: 20px;
+      margin-top: 140px;
+      border-radius: 25px;
+
+      width: 300px;
+      min-height: 40px;
+      background: #1f1f1f;
+
+      align-items: center;
+    }
+      .goods div{
+        display: flex;
+        flex: column;
+        width: 300px;
+        margin: 1px;
+        height: 40px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 0px 0px transparent;
+        background-color: #1f1f1f;
+          transition: transform, background-color, box-shadow;
+          transition-duration: 0.5s;
+      }
+        .goods div:hover {
+          background-color: #28b1efed;
+          transform: scale(1.1);
+          box-shadow: 0px 6px 13px -2px #000000;
+        }
+          #good{
+            margin: auto;
+            color: white;
+            width: 130px;
+          }
+          #price {
+            margin: auto;
+            color: white;
+          }
+        .buying {
+          display: flex;
+          flex-direction:column;
+          left: 0px;
+
+          margin-left: 20px;
+          margin-top: 15px;
+          border-radius: 25px;
+
+          width: 300px;
+          min-height: 40px;
+          background: #1f1f1f;
+          margin-bottom: 0px;
+
+          align-items: center;
+
+        }
+
+        .allMenus {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .number {
+          display: flex;
+          flex-direction: row;
+          height: 40px;
+          width: 300px;
+          border-radius: 25px;
+        }
+          .number div {
+            width: 150px;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+
+          }
+            .number div p{
+              color: white;
+              margin: auto;
+              margin-left:5px;
+            }
+            .number div input{
+              width:20px;
+              margin-left:40px;
+              background: #4d4b4b;
+              outline: none;
+              border: none;
+              color: white;
+              border-radius: 5px;
+              text-align: center;
+            }
+
+            .numbersToBuy {
+              display: flex;
+              flex-direction: row;
+            }
+
+          #buyButton {
+            background-color: #28b1efed;
+            box-shadow: 0px 6px 40px -2px #4d4b4b;
+            transition: background-color, transform;
+            transition-duration: 0.5s;
+
+          }
+          #MotherBuyButton {
+            background: transparent;
+            opacity: 0;
+            transform: scale(0.9);
+              transition: opacity, transform;
+              transition-duration: 1s;
+          }
+
+            #buyButton:hover {
+                background-color: #3fb8eeed;
+                transform: scale(1.05);
+            }
+
+            #typeNum {
+              margin: auto;
+            }

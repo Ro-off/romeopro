@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" rel="stylesheet" />
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class=screenFlex>
+    <div class="allMenus">
+      <div class="menuDesk">
+        <div class="nameDesk">
+          <div id="closeButton" onclick="alert('закрыть окно')"><p>⯇</p></div>
+          <p id="header">АССОРТИМЕНТ</p>
+        </div>
+        <div class="space"></div>
+        <div class="describe"> <p id="describe1">товар</p> <p id="describe2">цена</p> </div>
+      </div>
+      <div class="goods">
+      </div>
+
+
+      <div class="buying">
+        <div class="number">
+          <div><p>Количество:</p></div>
+          <div class="numbersToBuy">
+
+            <input id="typeNum" type="text" value="1" onkeydown="setTimeout(typeNumCheck, 1);">
+            <p>шт.<p/>
+
+            </div>
+        </div>
+      </div>
+
+      <div id = "MotherBuyButton" class="buying">
+        <div id = "buyButton" class="number">
+          <div><p>Купить за:</p></div>
+          <div class="numbersToBuy">
+            <p id="showPrice" style="margin:auto; margin-right: 1px;">0</p><p style=" margin-left: 1px;">$</p>
+
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
